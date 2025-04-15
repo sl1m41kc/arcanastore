@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="globals.css">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <title>ArcanaStore</title>
+</head>
+
+<body>
+  <div class="main-container">
+    <header>
+      <div>
+        <img class="logo" src="./public/svgs/logo.svg" alt="logo">
+      </div>
+      <nav>
+        <ul class="nav">
+          <li class="nav__item"><a href="./pages/sell/index.html">ПРОДАТЬ</a></li>
+          <li class="nav__item"><a href="./index.html">КУПИТЬ</a></li>
+          <li class="nav__item"><a href="./pages/faq/index.html">FAQ</a></li>
+        </ul>
+        <button class="sign-in-button">
+          <img src="./public/svgs/steam-logo.svg" alt="">
+          <p class="sign-in-button__text">ВОЙТИ ЧЕРЕЗ <span style="font-weight: 500;">STEAM</span></p>
+        </button>
+      </nav>
+    </header>
+    <div class="main">
+      <div class="sidebar-wrapper">
+
+        <aside class="sidebar">
+          <div class="filter">
+            <h2 class="filter__title">Название</h2>
+            <input type="text" class="text-input" placeholder="Найти предмет">
+          </div>
+          <div class="filter">
+            <h2 class="filter__title">Цена</h2>
+            <div class="input-wrapper">
+              <input type="text" class="text-input" placeholder="от 75 ₽">
+              <input type="text" class="text-input" placeholder="до 33767.47 ₽">
+            </div>
+          </div>
+          <div class="filter">
+            <h2 class="filter__title">Редкость</h2>
+            <div class="variants-wrapper">
+              <div class="variant">
+                <input type="checkbox" class="variant__checkbox" id="checkbox1">
+                <label for="checkbox1" class="variant__name">Common</label>
+              </div>
+              <div class="variant">
+                <input type="checkbox" class="variant__checkbox" id="checkbox2">
+                <label for="checkbox2" class="variant__name">Mythical</label>
+              </div>
+              <div class="variant">
+                <input type="checkbox" class="variant__checkbox" id="checkbox3">
+                <label for="checkbox2" class="variant__name">Rare</label>
+              </div>
+              <div class="variant">
+                <input type="checkbox" class="variant__checkbox" id="checkbox4">
+                <label for="checkbox4" class="variant__name">Uncommon</label>
+              </div>
+              <div class="variant">
+                <input type="checkbox" class="variant__checkbox" id="checkbox5">
+                <label for="checkbox5" class="variant__name">Immortal</label>
+              </div>
+              <div class="variant">
+                <input type="checkbox" class="variant__checkbox" id="checkbox6">
+                <label for="checkbox6" class="variant__name">Legendary</label>
+              </div>
+              <div class="variant">
+                <input type="checkbox" class="variant__checkbox" id="checkbox7">
+                <label for="checkbox7" class="variant__name">Arcana</label>
+              </div>
+              <div class="variant">
+                <input type="checkbox" class="variant__checkbox" id="checkbox8">
+                <label for="checkbox8" class="variant__name">Ancient</label>
+              </div>
+            </div>
+          </div>
+          <div class="filter">
+            <h2 class="filter__title">Герой</h2>
+            <select class="select">
+              <option class="select__item">Pudge</option>
+              <option class="select__item">Zeus</option>
+              <option class="select__item">Bane</option>
+              <option class="select__item">Legion Commander</option>
+              <option class="select__item">Phantom Assasin</option>
+            </select>
+          </div>
+        </aside>
+      </div>
+      <section class="items">
+        <div class="cards-filter-wrapper">
+          <select class="select">
+            <option class="select__item">Сначала дешевле</option>
+            <option class="select__item">Сначала дороже</option>
+            <option class="select__item">По популярности</option>
+          </select>
+        </div>
+        <div class="cards">
+          <div class="card">
+            <div class="card__img"><img src="./public/images/cardImg.png" alt=""></div>
+            <h4 class="card__title">Exalted Feast of Abscession egegegregeg</h4>
+            <h3 class="card__price">1 140 ₽</h3>
+            <div class="card-buttons">
+              <button class="card-buttons__buy">КУПИТЬ</button>
+              <button class="card-buttons__to-cart">В КОРЗИНУ</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__img"><img src="./public/images/cardImg.png" alt=""></div>
+            <h4 class="card__title">Exalted Feast of Abscession egegegregeg</h4>
+            <h3 class="card__price">1 140 ₽</h3>
+            <div class="card-buttons">
+              <button class="card-buttons__buy">КУПИТЬ</button>
+              <button class="card-buttons__to-cart">В КОРЗИНУ</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__img"><img src="./public/images/cardImg.png" alt=""></div>
+            <h4 class="card__title">Exalted Feast of Abscession egegegregeg</h4>
+            <h3 class="card__price">1 140 ₽</h3>
+            <div class="card-buttons">
+              <button class="card-buttons__buy">КУПИТЬ</button>
+              <button class="card-buttons__to-cart">В КОРЗИНУ</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__img"><img src="./public/images/cardImg.png" alt=""></div>
+            <h4 class="card__title">Exalted Feast of Abscession egegegregeg</h4>
+            <h3 class="card__price">1 140 ₽</h3>
+            <div class="card-buttons">
+              <button class="card-buttons__buy">КУПИТЬ</button>
+              <button class="card-buttons__to-cart">В КОРЗИНУ</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__img"><img src="./public/images/cardImg.png" alt=""></div>
+            <h4 class="card__title">Exalted Feast of Abscession egegegregeg</h4>
+            <h3 class="card__price">1 140 ₽</h3>
+            <div class="card-buttons">
+              <button class="card-buttons__buy">КУПИТЬ</button>
+              <button class="card-buttons__to-cart">В КОРЗИНУ</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__img"><img src="./public/images/cardImg.png" alt=""></div>
+            <h4 class="card__title">Exalted Feast of Abscession egegegregeg</h4>
+            <h3 class="card__price">1 140 ₽</h3>
+            <div class="card-buttons">
+              <button class="card-buttons__buy">КУПИТЬ</button>
+              <button class="card-buttons__to-cart">В КОРЗИНУ</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__img"><img src="./public/images/cardImg.png" alt=""></div>
+            <h4 class="card__title">Exalted Feast of Abscession egegegregeg</h4>
+            <h3 class="card__price">1 140 ₽</h3>
+            <div class="card-buttons">
+              <button class="card-buttons__buy">КУПИТЬ</button>
+              <button class="card-buttons__to-cart">В КОРЗИНУ</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__img"><img src="./public/images/cardImg.png" alt=""></div>
+            <h4 class="card__title">Exalted Feast of Abscession egegegregeg</h4>
+            <h3 class="card__price">1 140 ₽</h3>
+            <div class="card-buttons">
+              <button class="card-buttons__buy">КУПИТЬ</button>
+              <button class="card-buttons__to-cart">В КОРЗИНУ</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__img"><img src="./public/images/cardImg.png" alt=""></div>
+            <h4 class="card__title">Exalted Feast of Abscession egegegregeg</h4>
+            <h3 class="card__price">1 140 ₽</h3>
+            <div class="card-buttons">
+              <button class="card-buttons__buy">КУПИТЬ</button>
+              <button class="card-buttons__to-cart">В КОРЗИНУ</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__img"><img src="./public/images/cardImg.png" alt=""></div>
+            <h4 class="card__title">Exalted Feast of Abscession egegegregeg</h4>
+            <h3 class="card__price">1 140 ₽</h3>
+            <div class="card-buttons">
+              <button class="card-buttons__buy">КУПИТЬ</button>
+              <button class="card-buttons__to-cart">В КОРЗИНУ</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__img"><img src="./public/images/cardImg.png" alt=""></div>
+            <h4 class="card__title">Exalted Feast of Abscession egegegregeg</h4>
+            <h3 class="card__price">1 140 ₽</h3>
+            <div class="card-buttons">
+              <button class="card-buttons__buy">КУПИТЬ</button>
+              <button class="card-buttons__to-cart">В КОРЗИНУ</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__img"><img src="./public/images/cardImg.png" alt=""></div>
+            <h4 class="card__title">Exalted Feast of Abscession egegegregeg</h4>
+            <h3 class="card__price">1 140 ₽</h3>
+            <div class="card-buttons">
+              <button class="card-buttons__buy">КУПИТЬ</button>
+              <button class="card-buttons__to-cart">В КОРЗИНУ</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</body>
+
+</html>

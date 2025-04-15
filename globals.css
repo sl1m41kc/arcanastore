@@ -7,6 +7,272 @@
   --text: #E0E0E0;
 
   font-size: clamp(16px, 1.7vw, 20px);
+  background-color: var(--color1);
+  color: var(--text);
+  font-family: 'Roboto', sans-serif;
 }
 
-  
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1.5fr 5fr;
+  gap: 2rem;
+}
+
+.main-container {
+  max-width: 1440px;
+  width: 100%;
+  height: 100%;
+  margin: clamp(10px, 2vw, 40px);
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.logo {
+  scale: 0.6;
+}
+
+nav {
+  display: flex;
+  gap: 150px;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+  align-items: center;
+  list-style-type: none;
+}
+
+.nav__item>a:hover {
+  color: var(--accent2);
+}
+
+.sign-in-button {
+  padding: 20px 40px;
+  background-color: var(--color3);
+  cursor: pointer;
+  border: none;
+  display: flex;
+  gap: 1rem;
+  border-radius: 1rem;
+  align-items: center;
+  transition: scale 0.2s;
+}
+
+.sign-in-button:hover {
+  scale: 1.1;
+}
+
+.sign-in-button__text {
+  white-space: nowrap;
+  color: var(--text);
+}
+
+.sidebar-wrapper {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.sidebar {
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  width: 100%;
+  position: sticky;
+  top: 20px;
+}
+
+.filter {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.filter__title {
+  font-weight: 400;
+}
+
+.text-input {
+  background-color: transparent;
+  border: 1px solid var(--color3);
+  border-radius: 5px;
+  padding: 10px;
+  color: var(--text);
+  font-size: 0.75rem;
+  width: 100%;
+}
+
+.text-input:focus {
+  outline: none;
+}
+
+.text-input::placeholder {
+  color: var(--text);
+  opacity: 0.15;
+  font-size: 0.75rem;
+}
+
+.input-wrapper {
+  display: flex;
+  gap: 0.5rem;
+}
+
+
+
+.select {
+  background: transparent url(./public/svgs/arrow-select.svg) no-repeat right 10px center;
+  appearance: none;
+  border: 1px solid var(--color3);
+  border-radius: 5px;
+  padding: 10px;
+  padding-right: 40px;
+  cursor: pointer;
+  color: var(--text);
+  font-size: 16px;
+}
+
+.select:focus {
+  outline: none;
+}
+
+.items {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.cards-filter-wrapper {
+  width: 100%;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.card {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: var(--color2);
+  padding: 10px;
+}
+
+.card__img {
+  width: 100%;
+  height: 200px;
+}
+
+.card__img > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card__title {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.card__price {
+  font-size: 20px;
+}
+
+.card-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card-buttons__buy, .card-buttons__to-cart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  padding: 5px 0;
+  font-size: 16px;
+}
+
+.card-buttons__buy {
+  color: var(--text);
+  background-color: var(--color3);
+  border: none;
+}
+
+.card-buttons__to-cart {
+  color: var(--color3);
+  border: 1px solid var(--color3);
+  background-color: transparent;
+}
+
+@media (max-width: 1280px) {
+  header {
+    flex-direction: column;
+  }
+
+  .sign-in-button {
+    display: none;
+  }
+
+  .cards {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 1000px) {
+  .cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 650px) {
+  .main-container {
+    margin: 0;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 450px) {
+  .cards {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 770px) {
+  .main {
+    grid-template-columns: 1fr;
+  }
+}
